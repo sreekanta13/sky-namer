@@ -131,7 +131,7 @@ transform: scaley(1);
 }
 /* banner css */
 .banner-section{
-    background: url(img/mbr-4.jpg) no-repeat center center;
+    background: url(https://i.ibb.co/87nhkRT/mbr-4.jpg) no-repeat center center;
     background-size: cover;
     padding: 200px 0;
     color: #fff;
@@ -262,6 +262,7 @@ margin-right: 0;
 .pricing-table-section{
     background: #f7f9ff;
     padding: 50px;
+   
 }
 .section-title h2{
     font-size: 55px;
@@ -273,6 +274,7 @@ font-weight: 300;
 
 .pricing-tables{
     margin-top: 80px;
+    margin-bottom: 60px;
 }
 .pricing-table-item{
     width: 31.3%;
@@ -468,7 +470,7 @@ padding: 60px 0;
 .blog-post-item {
     width: 48%;
     background: #fff;
-    
+    margin-right: 20px;
     box-shadow: 3px 4px 30px 0 rgba(42, 68, 185, 0.3);
 }
 .blog-post-item img{
@@ -645,7 +647,6 @@ width: 48%;
 font-size: 20px;
 
 }
-
 
 
 

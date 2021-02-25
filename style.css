@@ -223,7 +223,7 @@ width: 48%;
 
 }
 .service-box{
-    width: 32%;
+    width: 31%;
     box-shadow: 4px 4px 20px 0 rgba(0,0,0,.2);
     margin-right: 2%;
     margin-bottom: 25px;
@@ -238,7 +238,7 @@ margin-right: 0;
 .s-icon{
     width: 35px;
     float: left;
-    height: 160px;
+    height: 180px;
     font-size: 30px;
     color: #6278df;
     margin-right: 8px;
@@ -647,10 +647,6 @@ width: 48%;
 font-size: 20px;
 
 }
-
-
-
-
 
 
 

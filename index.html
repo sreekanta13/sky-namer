@@ -1,461 +1,299 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AppAMP Time Planner App devaloping</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-<div class="header-section clear">
-    <div class="mid-content">
-        <div class="header-logo left">
-            <a class="logo" href="#">
-             <img src="https://i.ibb.co/16FRM0Z/logo-2.png" alt="">
-                <span>AppAMP Theme</span>
-            </a>
-        </div>
-<div class="header-menu left">
-    <div class="primary-menu">
-<ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About Us</a></li>
-    <li><a href="#">Service <i class="fa fa-caret-down"aria-hidden="true"></i></a>
-        <ul>
-        <li><a href="#">Time Planner Apps</a></li>
-        <li><a href="#">Health Tracker</a></li>
-    </ul></li>
-    <li><a href="#">Product</a></li>
-    <li><a href="#">Contact</a></li>
-</ul>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Day 31 full web site</title>
+  </head>
+  <body>
+
+<nav class="navbar navbar-expand-lg navbar-light jon-header">
+  <div class="container">
+    <a class="navbar-brand" href="#"><span> <i class="fas fa-mobile-alt"></i></span> AppAMP Theme</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between ml-5" id="navbarSupportedContent">
+      <ul class="navbar-nav jon-menu ml-5 mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+
+      
+      <a class="btn btn-outline-primary btn-lg font-weight-bold" href="#">Buy Now</a>
+     
+
+  </div>
+</nav>
+
+<section class="slider-section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="slider-caption w-50 mx-auto text-center text-white">
+                    <h4>It is created to watch your health</h4>
+                    <h2>Health Tracker App</h2>
 
 
-
-    </div>
-</div>
-
-
-<div class="header-button left">
- <a class="header-btn" href="#">Buy Now</a>
-</div>
-
-    </div>
-</div>
-
-
-<div class="banner-section">
-    <div class="mid-content">
-        <div class="banner-content text-center">
-            <h3>Create to save your time</h3>
-          <h2>Time Planner App</h2>
-          <a class="default-btn"href="#"><i class="fa fa-android"aria-hidden="true"></i> Google Play</a>
-                <a class="default-btn"href="#"><i class="fa fa-apple"aria-hidden="true"></i> Apple Store</a>
-
-        </div>
-    </div>
-</div>
-
-
-<div class="banner-buttom clear">
-    <div class="mid-content">
-        <div class="video-left left">
-            <iframe width="100%" height="341" src="https://www.youtube.com/embed/dgJ88MwbVX0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="video-content-right right">
-            <h3>Watch a video on how to use our app</h3>
-            <p>It’s not just about recording employee hours. It’s about understanding employee availability. It’s about hitting project deadlines — while staying on budget. It’s knowing you’ll never have to update another Excel spreadsheet. It’s about making things easy. It’s giving your team the tools they need to do their jobs well. And the insights to work more effectively than ever before</p>
-        </div>
-    </div>
-</div>
-<div class="service-section">
-    <div class="mid_content">
-        <div class="section-title text-center">
-            <h1>Learn more about our application</h1>
-            <p>Track time without wasting a second</p>
-        </div>
-
-
-
-        
-        <div class="services-item clear">
-
-            <div class="service-box left">
-                <div class="s-icon">
-                    <span><i class="fa fa-laptop"aria-hidden="true"></i></span>
-                </div>
-               
-                <div class="s-content">
-                    <h3>Time Tracking</h3>
-                    <p>
-                        
-                        Accurate and simple time tracking. Task-based estimation
-                         </p>
-                </div>
-            </div>
-
-            <div class="service-box left">
-                <div class="s-icon">
-                    <span><i class="fas fa-laptop-code"></i></span>
-                </div>
-               
-                <div class="s-content">
-                    <h3>Resource Planning</h3>
-                    <p>
-                        
-                        
-                        Monitor team’s utilization across different projects
-                         </p>
-                </div>
-            </div>
-
-
-            <div class="service-box left">
-                <div class="s-icon">
-                    <span><i class="fas fa-laptop-code"></i></span>
-                </div>
-               
-                <div class="s-content">
-                    <h3>   Integrations</h3>
-                    <p>
-                     
-                        
-                        Track time inside the most popular project management tools
-                         </p>
-                </div>
-            </div>
-
-            <div class="service-box left">
-                <div class="s-icon">
-                    <span><i class="fa fa-laptop"aria-hidden="true"></i></span>
-                </div>
-               
-                <div class="s-content">
-                    <h3> Task Management</h3>
-                    <p>
-                       
-                        
-                        Create tasks, track time and update progress in one place
-                        </p>
-                </div>
-            </div>
-
-            <div class="service-box left">
-                <div class="s-icon">
-                    <span><i class="fa fa-laptop"aria-hidden="true"></i></span>
-                </div>
-               
-                <div class="s-content">
-                    <h3> Reporting
-                    </h3>
-                    <p>
-                       
-                        Highly flexible reports to analyze time the way you want
-                         </p>
-                </div>
-            </div>
-
-
-
-            <div class="service-box left">
-                <div class="s-icon">
-                    <span><i class="fa fa-laptop"aria-hidden="true"></i></span>
-                </div>
-               
-                <div class="s-content">
-                    <h3>Invoicing
-                    </h3>
-                    <p>
-                        
-                        Create invoices from time entries and send them to your clients
-                        </p>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-</div>
-
-
-<!-- pricing table section -->
-
-<div class="pricing-table-section">
-    <div class="mid-content">
-        <div class="section-title text-center">
-          <h2>Start using our app today</h2>
-            <p>Set of tools to seamlessly manage projects during their entire life cycle</p>
-        </div>
-<div class="pricing-tables clear">
-
-    <div class="pricing-table-item left">
-        <div class="p-heading">
-            <h4>Free Vertion </h4>
-<h1> $ 0  <span>/ month</span>  </h1>
-<h5>Who is this for? </h5>
-<p>Free version for students and regular users</p>
-               </div>
-        <div class="p-content">
-            <ul>
-                <li> <span><i class="fa fa-check" aria-hidden="true"></i>
-                </span> Time Tracking</li>
-                <li> <span><i class="fa fa-check" aria-hidden="true"></i>
-                </span> Resource Planning</li>
-                <li> <span><i class="fa fa-times" aria-hidden="true"></i>
-                </span> Integrations</li>
-                <li> <span><i class="fa fa-times" aria-hidden="true"></i>
-                </span> Task Management</li>
-                <li> <span><i class="fa fa-times" aria-hidden="true"></i>
-                </span> Reporting</li>
-                <li> <span><i class="fa fa-times" aria-hidden="true"></i>
-                </span> Invoicing</li>
-            </ul>
-            <div class="p-buttom text-center">
-                <a href="#" class="default-btn">Get Free Now</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="pricing-table-item left">
-        <div class="p-heading">
-            <h4>Free Vertion </h4>
-<h1> $ 0 <span>/ month</span>  </h1>
-<h5>Who is this for? </h5>
-<p>Free version for students and regular users</p>
-               </div>
-        <div class="p-content">
-            <ul>
-                <li> <span><i class="fa fa-check" aria-hidden="true"></i>
-                </span> Time Tracking</li>
-                <li> <span><i class="fa fa-check" aria-hidden="true"></i>
-                </span> Resource Planning</li>
-                <li> <span><i class="fa fa-check" aria-hidden="true"></i>
-                </span> Integrations</li>     
-                <li> <span><i class="fa fa-check" aria-hidden="true"></i>
-                </span> Task Management</li>
-                <li> <span><i class="fa fa-times" aria-hidden="true"></i>
-                </span> Reporting</li>
-                <li> <span><i class="fa fa-times" aria-hidden="true"></i>
-                </span> Invoicing</li>
-            </ul>
-            <div class="p-buttom text-center">
-                <a href="#" class="default-btn">Get Free Now</a>
-            </div>
-        </div>
-    </div>
-   
- <div class="pricing-table-item left">
-        <div class="p-heading">
-            <h4>Free Vertion </h4>
-<h1> $ 0  <span>/ month</span>  </h1>
-<h5>Who is this for? </h5>
-<p>Free version for students and regular users</p>
-               </div>
-        <div class="p-content">
-            <ul>
-                <li> <span><i class="fa fa-check" aria-hidden="true"></i>
-                </span>  Time Tracking</li>
-                <li> <span><i class="fa fa-check" aria-hidden="true"></i>
-                </span>  Resource Planning</li>
-                <li> <span><i class="fa fa-check" aria-hidden="true"></i>
-                </span>  Integrations</li>
-                <li> <span><i class="fa fa-check" aria-hidden="true"></i>
-                </span>  Task Management</li>
-                <li> <span><i class="fa fa-check" aria-hidden="true"></i>
-                </span>  Reporting</li>
-                <li> <span><i class="fa fa-check" aria-hidden="true"></i>
-                </span>  Invoicing</li>
-            </ul>
-            <div class="p-buttom text-center">
-                <a href="#" class="default-btn">Get Free Now</a>
-            </div>
-        </div>
-    </div>
-   
-</div>
-    </div>
-</div>
-
-
-<!-- team section -->
-<div class="team-section">
-    <div class="mid-content">
-        <div class="section-title text-center">
-          <h2>Our team is constantly trying for you</h2>
-        </div>
-<div class="team-members clear">
-
-    <div class="member left">
-        <img src="https://i.ibb.co/9Zsy9KR/face1.jpg" alt="">
-        <div class="member-bio">
-            <h4>Jason Doe</h4>
-            <p>Programmer</p>
-        </div>
-    </div>
-
-    <div class="member left">
-        <img src="https://i.ibb.co/WVjfQJR/face2.jpg" alt="">
-        <div class="member-bio">
-            <h4>Amanda Swon</h4>
-            <p>Designer</p>
-        </div>
-    </div>
-
-    <div class="member left">
-        <img src="https://i.ibb.co/wCR1JLN/face3.jpg" alt="">
-        <div class="member-bio">
-            <h4>Andrew Smith</h4>
-            <p>Support</p>
-        </div>
-    </div>
-
-    <div class="member left">
-        <img src="https://i.ibb.co/G97TCjJ/face4.jpg" alt="">
-        <div class="member-bio">
-            <h4>Jane Olsen</h4>
-            <p>Manager</p>
-        </div>
-    </div>
-
-</div>
-    </div>
-</div>
-<!-- news letter -->
-<div class="newsletter-section">
-    <div class="mid-content">
-        <div class="section-title newsletter-title text-center">
-            <p>Keep up to date with the latest updates</p>
-            <h2>Subscribe to our newsletter</h2>
-            <div class="newslatter-form">
-                <form action="#">
-                    <input type="e-mail" class="default-input" placeholder="Email Address">
-                    <button class="submit-btn" type="submit">Subscriber</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- block section -->
-
-<div class="blog-section">
-    <div class="mid-content clear">
-        <div class="blog-title">
-            <div class="b-heading left">
-                <h2>What's new?</h2>
-            </div>
-<div class="bt-content right">
-    <p>Accurate employee time tracking software for reporting, invoicing and painless payroll. Trusted by over 2,000 businesses in more than 70 countries. 
-        </p>
-</div>
-        </div>
-        <div class="blog-items clear">
-
-            <div class="blog-post-item right">
-                <img src="https://i.ibb.co/QH96jWd/02.jpg" alt="">
-                <div class="blog-post-content">
-                    <h3>Reporting</h3>
-                    <p>Highly flexible reports to analyze time the way you want</p>
-                </div>
-            </div>
-
-            <div class="blog-post-item right">
-                <img src="https://i.ibb.co/9HR409G/03.jpg" alt="">
-                <div class="blog-post-content">
-                    <h3>Reporting</h3>
-                    <p>Highly flexible reports to analyze time the way you want</p>
-                </div>
-            </div>
-           
-        </div>
-    </div>
-</div>
-
-
-<!-- testimonial section -->
-<div class="testimonial-section p-bg">
-    <div class="mid-content">
-        <div class="section-title newsletter-title text-center">
-            <p>Feedback from our users</p>
-            <h2>What do users say about our application</h2>
-        </div>
-        <div class="testimonial-items clear">
-
-<div class="t-item left">
-<div class="t-content">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perspiciatis vero accusantium excepturi aperiam eius sit quis nobis</p>
-</div>
-<div class="t-user-img">
-    <img src="https://i.ibb.co/9Zsy9KR/face1.jpg" alt="">
-    <div class="t-user-bio">
-        <h4>Jason Doe</h4>
-        <span>User</span>
-    </div>
-</div>
-</div>
-
-<div class="t-item left">
-    <div class="t-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perspiciatis vero accusantium excepturi aperiam eius sit quis nobis</p>
-    </div>
-    <div class="t-user-img">
-        <img src="https://i.ibb.co/WVjfQJR/face2.jpg" alt="">
-        <div class="t-user-bio">
-            <h4>Amanda Swon</h4>
-            <span>User</span>
-        </div>
-    </div>
-    </div>
-    <div class="t-item left">
-        <div class="t-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perspiciatis vero accusantium excepturi aperiam eius sit quis nobis</p>
-        </div>
-        <div class="t-user-img clear">
-            <img src="https://i.ibb.co/wCR1JLN/face3.jpg" alt="">
-            <div class="t-user-bio">
-                <h4>Andrew Smith</h4>
-                <span>User</span>
-            </div>
-        </div>
-
-        </div>
-        </div>
-    </div>
-</div>
-</div>
-
-
-      <!-- contact section -->
-<div class="content-section">
-    <div class="mid-content">
-        <div class="contact-row clear">
-            <div class="content-left-map left">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29514.712926664866!2d91.90222243628656!3d22.378569841877088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad25d1b4ee63ed%3A0x57feb012672900bd!2z4Kas4KeL4Kef4Ka-4Kay4KaW4Ka-4Kay4KeA!5e0!3m2!1sbn!2sbd!4v1614228168874!5m2!1sbn!2sbd" width="100%" height="700" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <div class="content-right-form right">
-                <h4>Contact us</h4>
-                <p>Contact us if you have any questions and we will contact you. We appreciate user feedback and be sure to take into account your wishes.</p>
-                <div class="footer-contact-form clear">
                     <form action="#">
-                        <input type="email" placeholder="Email-Address"
-                        class="default-input w100">
-                        <input type="text" placeholder="Name" class="default-input w50 left">
-                        <input type="text" placeholder="Phone" class="default-input w50 right">
-                        <textarea class="default-input w100" placeholder="Message"></textarea>
-                        <button type="submit" class="submit-btn">Send</button>
+<div class="row">
+  <div class="col-lg-7">
+    <input type="text" class="form-control form-control-lg" placeholder="Type your Number">
+  </div>
+  <div class="col-lg-5">
+    <button type="submit" class="btn btn-info btn-lg btn-block">Get App</button>
+  </div>
+</div>
                     </form>
+
+
                 </div>
             </div>
         </div>
-        <div class="footer text-center">
-<p>© Copyright 2021 By Sreekanta - All Rights Reserved</p>
-        </div>
     </div>
+</section>
+
+<section class="number-counter py-5">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-3">
+        <div class="counter-number-item text-center">
+          <p class="h2">100+</p>
+          <p class="text-muted">Health programs</p>
+        </div>
+      </div>
+     
+      <div class="col-lg-3">
+        <div class="counter-number-item text-center">
+          <p class="h2">50+</p>
+          <p class="text-muted">Individual parameters</p>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="counter-number-item text-center">
+          <p class="h2">2500+</p>
+          <p class="text-muted">Active users </p>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="counter-number-item text-center">
+          <p class="h2">10 X</p>
+          <p class="text-muted">Training efficiency</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- about section -->
+
+<div class="about-section py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+<div class="about-text-left">
+  <h1 class="mb-4">Activity Goals To Improve Health</h1>
+<p class="lead">Being active is important to our health, but how much or what kind of activity do you need? Health Tracker App worked with the World Health Organisation to develop two activity goals based on WHO's physical activity recommendations shown to impact health - Move Minutes and Heart Points</p>
+</div>
+      </div>
+      <div class="col-lg-4">
+        <img class="mw-100 rounded" src="img/015.jpg" alt="">
+      </div>
+    </div>
+  </div>
 </div>
 
+<section class="feature-section py-5 mb-4">
+<div class="container">
+  <div class="row">
+    <div class="col text-center mb-5">
+      <h1>Learn more about our application</h1>
+      <p>Coaching you to a healthier and more active life</p>
+    </div>
+  </div>
+  <div class="row">
 
-</body>
+    <div class="col-lg-4">
+      <div class="feature-item d-flex align-items-center">
+       <div class="left-img-sec h-100">
+         <img src="img/022.jpg" alt="">
+       </div>
+       <div class="left-text-sec h-auto">
+         <h4>HEART POINTS</h4>
+         <p>Activities that get your heart pumping harder have tremendous health benefits for your heart and mind.</p>
+       </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="feature-item d-flex align-items-center">
+       <div class="left-img-sec h-100">
+         <img class="pl-6" src="img/mbr-7.jpg" alt="">
+       </div>
+       <div class="left-text-sec h-auto">
+         <h4>MOVE MINUTES</h4>
+         <p>
+          When it comes to your health, it’s important to move more and sit less. Earn Move Minutes for all your activity</p>
+       </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mb-4">
+      <div class="feature-item d-flex align-items-center">
+       <div class="left-img-sec h-100">
+         <img class="pl-5" src="img/mbr-8.jpg" alt="">    
+       </div>
+       <div class="left-text-sec h-auto">
+         <h4>FITNESS ASSESSMENT</h4>
+         <p>Your expert coach will take you through an assessment in order to create your personal plan for success.</p>
+       </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="feature-item d-flex align-items-center">
+       <div class="left-img-sec h-100">
+         <img src="img/mbr-5.jpg" alt="">
+       </div>
+       <div class="left-text-sec h-auto">
+         <h4>NUTRITIONAL SUCCESS</h4>
+         <p>You'll get a personalized nutrition plan built specifically for your needs.</p>
+       </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="feature-item d-flex align-items-center">
+       <div class="left-img-sec h-100">
+         <img src="img/mbr-12.jpg" alt="">
+       </div>
+       <div class="left-text-sec h-auto">
+         <h4>WORKOUTS</h4>
+         <p>We build the workouts for you, you follow them and get results. App will take you through each expert-built workout,</p>
+       </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="feature-item d-flex align-items-center">
+       <div class="left-img-sec h-100">
+         <img src="img/mbr-13.jpg" alt="">
+       </div>
+       <div class="left-text-sec h-auto">
+         <h4>MOTIVATION </h4>
+         <p>Your coach works with you on a daily basis to keep you motivated and on track. </p>
+       </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- portifolio section -->
+
+<section class="portfolio-section">
+<div class="container">
+  <div class="row">
+    <div class="col py-5 text-center">
+      <h1>Look at our application</h1>
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="col-lg-4 mb-4">
+      <div class="portfolio-item">
+        <a href="#">
+          <img src="img/022.jpg" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mb-4">
+      <div class="portfolio-item">
+        <a href="#">
+          <img src="img/033.jpg" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mb-4">
+      <div class="portfolio-item">
+        <a href="#">
+          <img src="img/04.jpg" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mb-4">
+      <div class="portfolio-item">
+        <a href="#">
+          <img src="img/05.jpg" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mb-4">
+      <div class="portfolio-item">
+        <a href="#">
+          <img src="img/background18.jpg" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mb-4">
+      <div class="portfolio-item">
+        <a href="#">
+          <img src="img/022.jpg" alt="">
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </body>
 </html>
